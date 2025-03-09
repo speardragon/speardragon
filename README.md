@@ -9,8 +9,6 @@
 <li> 항상 긍정적인 태도로 다른 개발자들과 원활하게 소통하고 관련 지식을 나누는 것에 관심이 있습니다.  </li>
 </ul>
 
-[![Tistory Name Badge](https://tistory-readme-stats.vercel.app/api/badge?name=tistory)](https://cdragon.tistory.com/)
-
 
 
 ### Projects 🗂️
