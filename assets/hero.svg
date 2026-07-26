@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360" role="img" aria-label="ChangRyong Kang — Full-Stack Engineer at goorm — terminal style">
+  <defs>
+    <radialGradient id="roomGlow" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0" stop-color="#1f6feb" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#1f6feb" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="2" fill="#ffffff" opacity="0.02"/>
+    </pattern>
+    <clipPath id="type1"><rect x="170" y="108" width="0" height="26"><animate attributeName="width" from="0" to="85" dur="0.7s" begin="0.6s" fill="freeze"/></rect></clipPath>
+    <clipPath id="type2"><rect x="170" y="170" width="0" height="26"><animate attributeName="width" from="0" to="130" dur="1.0s" begin="2.4s" fill="freeze"/></rect></clipPath>
+  </defs>
+
+  <rect width="960" height="360" fill="#05060f"/>
+  <ellipse cx="480" cy="180" rx="480" ry="220" fill="url(#roomGlow)"/>
+  <g fill="#e0e7ff">
+    <circle cx="70" cy="50" r="1.3"><animate attributeName="opacity" values="1;0.2;1" dur="3.4s" repeatCount="indefinite"/></circle>
+    <circle cx="905" cy="80" r="1.5"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="90" cy="300" r="1.2"><animate attributeName="opacity" values="1;0.25;1" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="880" cy="310" r="1.1"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.1s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- 터미널 윈도우 -->
+  <rect x="140" y="40" width="680" height="280" rx="12" fill="#0d1117" stroke="#30363d"/>
+  <rect x="140" y="40" width="680" height="280" rx="12" fill="url(#scan)"/>
+  <circle cx="170" cy="70" r="6" fill="#ff5f56"/>
+  <circle cx="192" cy="70" r="6" fill="#ffbd2e"/>
+  <circle cx="214" cy="70" r="6" fill="#27c93f"/>
+  <text x="480" y="75" text-anchor="middle" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#8b949e">ray@goorm — zsh</text>
+  <line x1="140" y1="90" x2="820" y2="90" stroke="#21262d"/>
+
+  <!-- $ whoami (타이핑) -->
+  <text x="170" y="127" clip-path="url(#type1)" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="15"><tspan fill="#7ee787">$</tspan><tspan fill="#e6edf3" dx="8">whoami</tspan></text>
+  <!-- 출력 -->
+  <text x="170" y="155" opacity="0" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="15"><tspan fill="#e6edf3" font-weight="700">ChangRyong Kang</tspan><tspan fill="#8b949e" dx="8">· Full-Stack Engineer @ goorm</tspan><animate attributeName="opacity" from="0" to="1" dur="0.25s" begin="1.5s" fill="freeze"/></text>
+
+  <!-- $ cat now.txt (타이핑) -->
+  <text x="170" y="189" clip-path="url(#type2)" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="15"><tspan fill="#7ee787">$</tspan><tspan fill="#e6edf3" dx="8">cat now.txt</tspan></text>
+  <!-- 출력 -->
+  <text x="170" y="217" opacity="0" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="15"><tspan fill="#79c0ff">building</tspan><tspan fill="#e6edf3" dx="8">changdragon.com</tspan><tspan fill="#8b949e" dx="8">— my own corner of the web</tspan><animate attributeName="opacity" from="0" to="1" dur="0.25s" begin="3.6s" fill="freeze"/></text>
+
+  <!-- 대기 프롬프트 + 깜빡이는 커서 -->
+  <text x="170" y="262" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#7ee787" opacity="0">$<animate attributeName="opacity" from="0" to="1" dur="0.2s" begin="4.2s" fill="freeze"/></text>
+  <rect x="188" y="248" width="9" height="18" fill="#7ee787" opacity="0">
+    <animate attributeName="opacity" values="1;0" dur="1.1s" calcMode="discrete" begin="4.2s" repeatCount="indefinite"/>
+  </rect>
+</svg>
